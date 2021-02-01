@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 3710
+  controlID: 4073
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 3711
+  controlID: 4074
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 3690
+  controlID: 4075
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -482,19 +482,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\AnonuevoCarreon-Gabrielle-ILP1\ILP1-Unity\ILP1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 94480000
-    m_LastClickedID: 18580
+    m_SelectedIDs: 704b0000
+    m_LastClickedID: 19312
     m_ExpandedIDs: 000000008848000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -548,24 +548,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ac480000
-    m_LastClickedInstanceID: 18604
+    m_SelectedInstanceIDs: 684b0000
+    m_LastClickedInstanceID: 19304
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Scripts
+      m_OriginalName: Scripts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 19312
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -624,8 +624,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 971
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -667,5 +667,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 18604
+  m_LastInspectedObjectInstanceID: 19304
   m_LastVerticalScrollValue: 0
