@@ -5,25 +5,43 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     Rigidbody2D rb;
-    public int move;
-    public int jumpheight;
+    
+    public float speed;
+
+    private int count;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        count = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void FixedUpdate()
     {
+        //what causes the player object to move
         Vector2 force = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        rb.AddForce(force * move);
+        rb.AddForce(force * speed);
+        
+        //allows the player to jump
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            float jumpVelocity = 8f;
+            rb.velocity = Vector2.up * jumpVelocity;
+        }
     }
+
+    //will allow the player to collect coins
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+        }  
+    }
+
+    // identifies collision in the console
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Ground")
