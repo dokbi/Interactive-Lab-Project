@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 { 
     public float speed;
+    public GameObject ScoreManager;
+    public int playerID;
 
     private Rigidbody2D rb;
 
@@ -29,14 +30,15 @@ public class Player : MonoBehaviour
         }
     }
 
-    /*will allow the player to collect coins
-    void OnTriggerEnter2D(Collider2D other)
+    //will allow the player to collect coins
+   void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Coin"))
         {
             other.gameObject.SetActive(false);
+            ScoreManager.SendMessage("collect",playerID);
         }  
-    }*/
+    }
 
     // identifies collision in the console
     private void OnCollisionEnter2D(Collision2D collision)
